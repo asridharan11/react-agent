@@ -55,8 +55,8 @@ export class ReactComponentPicker {
   private model: string;
 
   constructor() {
-    this.model = "gpt-3.5-turbo";
-    // this.model = "gpt-4";
+    // this.model = "gpt-3.5-turbo";
+    this.model = "gpt-4"; //Umesh: we have to use gpt-4 here as it's responding proper UI components to be used for components generation.
     this.chatbot = new ChatBot(this.model);
   }
 

@@ -28,7 +28,7 @@ export function flattenComponents(composition: Component): {
 
   function flatten(component: Component) {
     flattenedComponents[component.name] = component;
-    component.components.forEach(flatten);
+    component.components?.forEach(flatten);
   }
 
   composition.components.forEach(flatten);

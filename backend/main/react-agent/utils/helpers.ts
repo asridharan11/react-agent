@@ -31,7 +31,7 @@ export function flattenComponents(composition: Component): {
     component.components?.forEach(flatten);
   }
 
-  composition.components.forEach(flatten);
+  composition.components?.forEach(flatten);
 
   return flattenedComponents;
 }

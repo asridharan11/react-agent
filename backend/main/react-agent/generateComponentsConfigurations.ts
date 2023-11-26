@@ -40,8 +40,10 @@ export const generateComponentsConfigurations = async (
         description: JSON.stringify(component),
       });
       // filter non existing components
-      const existingComponents = uiComponents.filter(doesComponentExist);
-      return { ...component, uiComponents: existingComponents };
+      if (uiComponents instanceof Array) {
+        const existingComponents = uiComponents.filter(doesComponentExist);
+        return { ...component, uiComponents: existingComponents };
+      }
     } catch (e) {
       console.error(e);
       return component;

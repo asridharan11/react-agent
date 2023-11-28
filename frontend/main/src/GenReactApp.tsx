@@ -8,6 +8,7 @@ import AnalyticsDashboardPageExampleDemo from './react-agent/AnalyticsDashboardE
 
 import landingPageJsonComposition from './react-agent/SaaSLandingPageExample/composition.json';
 import SaasCrmLandingPageDemo from './react-agent/SaaSLandingPageExample/demo';
+import HomePageDemo from './react-agent/EcommerceApp/Home/demo';
 
 // import jsonComposition from './react-agent/AnalyticsDashboard/composition.json';
 // import AnalyticsDashboardPageDemo from './react-agent/AnalyticsDashboard/demo';
@@ -33,7 +34,7 @@ const AnalyticsDashboard = () => {
 function App() {
   return (
     <BrowserRouter>
-      <DashboardExample />
+      <HomePageDemo />
       {/* <AnalyticsDashboard /> */}
       {/* <SaasCrmLandingPageExample /> */}
     </BrowserRouter>

@@ -1,0 +1,204 @@
+[
+  {
+    "type": "organism",
+    "name": "Navbar",
+    "layout": "flex justify-between p-6",
+    "description": "Navbar for navigation",
+    "components": [],
+    "uiComponents": []
+  },
+  {
+    "type": "organism",
+    "name": "UserLogin",
+    "layout": "flex flex-col",
+    "description": "User Login screen",
+    "components": [
+      {
+        "type": "atom",
+        "name": "Input",
+        "layout": "w-full mb-2 h-8",
+        "description": "Input fields for username and password",
+        "components": []
+      },
+      {
+        "type": "atom",
+        "name": "Button",
+        "layout": "mt-4 h-8 w-full",
+        "description": "Submit button for user login",
+        "components": []
+      }
+    ],
+    "uiComponents": ["Input", "Button"]
+  },
+  {
+    "type": "organism",
+    "name": "Dashboard",
+    "layout": "flex-1 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3",
+    "description": "Dashboard showing timesheets",
+    "components": [
+      {
+        "type": "atom",
+        "name": "TimesheetItem",
+        "layout": "w-full h-12",
+        "description": "Individual timesheet item",
+        "components": []
+      },
+      {
+        "type": "molecule",
+        "name": "TimesheetForm",
+        "layout": "flex flex-col",
+        "description": "Form to submit a new timesheet",
+        "components": [
+          {
+            "type": "atom",
+            "name": "Input",
+            "layout": "w-full mb-2 h-8",
+            "description": "Input fields for start and end time",
+            "components": []
+          },
+          {
+            "type": "atom",
+            "name": "Dropdown",
+            "layout": "w-full mb-2 h-8",
+            "description": "Dropdown for choosing regular or overtime hours",
+            "components": []
+          },
+          {
+            "type": "atom",
+            "name": "Button",
+            "layout": "mt-4 h-8 w-full",
+            "description": "Button to submit timesheet form",
+            "components": []
+          }
+        ]
+      },
+      {
+        "type": "atom",
+        "name": "Alert",
+        "layout": "fixed top-0 w-full h-8",
+        "description": "Alert for displaying system messages",
+        "components": []
+      }
+    ],
+    "uiComponents": ["Button", "Input", "Typography", "Alert"]
+  },
+  {
+    "type": "molecule",
+    "name": "TimesheetForm",
+    "layout": "flex flex-col",
+    "description": "Form to submit a new timesheet",
+    "components": [
+      {
+        "type": "atom",
+        "name": "Input",
+        "layout": "w-full mb-2 h-8",
+        "description": "Input fields for start and end time",
+        "components": []
+      },
+      {
+        "type": "atom",
+        "name": "Dropdown",
+        "layout": "w-full mb-2 h-8",
+        "description": "Dropdown for choosing regular or overtime hours",
+        "components": []
+      },
+      {
+        "type": "atom",
+        "name": "Button",
+        "layout": "mt-4 h-8 w-full",
+        "description": "Button to submit timesheet form",
+        "components": []
+      }
+    ],
+    "uiComponents": ["Input", "Button"]
+  },
+  {
+    "type": "page",
+    "name": "TimesheetAppPage",
+    "layout": "flex flex-col h-screen",
+    "description": "Main page for the Timesheet App",
+    "components": [
+      {
+        "type": "organism",
+        "name": "Navbar",
+        "layout": "flex justify-between p-6",
+        "description": "Navbar for navigation",
+        "components": []
+      },
+      {
+        "type": "organism",
+        "name": "UserLogin",
+        "layout": "flex flex-col",
+        "description": "User Login screen",
+        "components": [
+          {
+            "type": "atom",
+            "name": "Input",
+            "layout": "w-full mb-2 h-8",
+            "description": "Input fields for username and password",
+            "components": []
+          },
+          {
+            "type": "atom",
+            "name": "Button",
+            "layout": "mt-4 h-8 w-full",
+            "description": "Submit button for user login",
+            "components": []
+          }
+        ]
+      },
+      {
+        "type": "organism",
+        "name": "Dashboard",
+        "layout": "flex-1 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3",
+        "description": "Dashboard showing timesheets",
+        "components": [
+          {
+            "type": "molecule",
+            "name": "TimesheetItem",
+            "layout": "w-full h-12",
+            "description": "Individual timesheet item",
+            "components": []
+          },
+          {
+            "type": "molecule",
+            "name": "TimesheetForm",
+            "layout": "flex flex-col",
+            "description": "Form to submit a new timesheet",
+            "components": [
+              {
+                "type": "atom",
+                "name": "Input",
+                "layout": "w-full mb-2 h-8",
+                "description": "Input fields for start and end time",
+                "components": []
+              },
+              {
+                "type": "atom",
+                "name": "Dropdown",
+                "layout": "w-full mb-2 h-8",
+                "description": "Dropdown for choosing regular or overtime hours",
+                "components": []
+              },
+              {
+                "type": "atom",
+                "name": "Button",
+                "layout": "mt-4 h-8 w-full",
+                "description": "Button to submit timesheet form",
+                "components": []
+              }
+            ]
+          },
+          {
+            "type": "atom",
+            "name": "Alert",
+            "layout": "fixed top-0 w-full h-8",
+            "description": "Alert for displaying system messages",
+            "components": []
+          }
+        ]
+      }
+    ],
+    "uiComponents": ["Input", "Button", "Alert"]
+  }
+]

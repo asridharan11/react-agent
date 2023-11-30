@@ -1,7 +1,6 @@
-
 import React from 'react';
 import Header from './Header';
-import FeaturedProducts from './FeaturedProducts';
+import FeaturedProducts, { Product } from './FeaturedProducts';
 import PromotionAndDeals from './PromotionAndDeals';
 import ProductCategories from './ProductCategories';
 import NewArrivals from './NewArrivals';
@@ -15,7 +14,7 @@ export interface EcommerceHomePageProps {
   categories: Category[];
   newArrivals: Product[];
   reviews: Review[];
-};
+}
 
 const EcommerceHomePage: React.FC<EcommerceHomePageProps> = (props: EcommerceHomePageProps) => {
   return (

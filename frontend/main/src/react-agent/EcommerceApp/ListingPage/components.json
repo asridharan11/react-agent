@@ -1,0 +1,384 @@
+[
+  {
+    "type": "organism",
+    "name": "Header",
+    "layout": "flex justify-between items-center p-5",
+    "description": "Header with website logo, navigation menu, and search bar",
+    "components": [],
+    "uiComponents": [
+      "Typography",
+      "NavigationMenu",
+      "NavigationMenuContent",
+      "NavigationMenuIndicator",
+      "NavigationMenuItem",
+      "NavigationMenuLink",
+      "NavigationMenuList",
+      "NavigationMenuTrigger",
+      "NavigationMenuViewport",
+      "Input"
+    ]
+  },
+  {
+    "type": "organism",
+    "name": "FilterAndSort",
+    "layout": "flex flex-col p-5",
+    "description": "Filter and sorting options",
+    "components": [
+      {
+        "type": "molecule",
+        "name": "Filter",
+        "layout": "flex flex-col",
+        "description": "Filter products by category, price range, brand",
+        "components": []
+      },
+      {
+        "type": "molecule",
+        "name": "Sort",
+        "layout": "flex space-x-4",
+        "description": "Sort products by relevance, price, and ratings",
+        "components": []
+      }
+    ],
+    "uiComponents": ["Button", "DropdownMenuContent", "DropdownMenuItem", "DropdownMenuTrigger"]
+  },
+  {
+    "type": "molecule",
+    "name": "Filter",
+    "layout": "flex flex-col",
+    "description": "Filter products by category, price range, brand",
+    "components": [],
+    "uiComponents": [
+      "Box",
+      "Input",
+      "Button",
+      "Select",
+      "SelectContent",
+      "SelectGroup",
+      "SelectItem",
+      "SelectTrigger",
+      "SelectValue",
+      "Typography"
+    ]
+  },
+  {
+    "type": "molecule",
+    "name": "Sort",
+    "layout": "flex space-x-4",
+    "description": "Sort products by relevance, price, and ratings",
+    "components": [],
+    "uiComponents": ["Select", "SelectContent", "SelectGroup", "SelectItem", "SelectTrigger", "Typography", "Button"]
+  },
+  {
+    "type": "organism",
+    "name": "ProductListing",
+    "layout": "flex flex-wrap justify-between",
+    "description": "Display of product listings",
+    "components": [
+      {
+        "type": "molecule",
+        "name": "ProductCard",
+        "layout": "flex flex-col p-5 space-y-2",
+        "description": "Individual product card with image, details and 'Add to Cart' button",
+        "components": []
+      }
+    ],
+    "uiComponents": ["Card", "CardContent", "Typography", "Button", "AspectRatio"]
+  },
+  {
+    "type": "molecule",
+    "name": "ProductCard",
+    "layout": "flex flex-col p-5 space-y-2",
+    "description": "Individual product card with image, details and 'Add to Cart' button",
+    "components": [],
+    "uiComponents": [
+      "Card",
+      "CardContent",
+      "CardDescription",
+      "CardFooter",
+      "CardHeader",
+      "CardTitle",
+      "Button",
+      "Typography"
+    ]
+  },
+  {
+    "type": "organism",
+    "name": "Pagination",
+    "layout": "flex justify-center items-center p-5",
+    "description": "Pagination or infinite scroll component",
+    "components": [],
+    "uiComponents": ["Button", "Typography"]
+  },
+  {
+    "type": "organism",
+    "name": "QuickView",
+    "layout": "absolute top-0 left-0",
+    "description": "Quick view of product details on hover",
+    "components": [],
+    "uiComponents": [
+      "Dialog",
+      "DialogContent",
+      "DialogDescription",
+      "DialogTrigger",
+      "Typography",
+      "Button",
+      "Card",
+      "CardContent",
+      "CardTitle",
+      "CardDescription"
+    ]
+  },
+  {
+    "type": "organism",
+    "name": "Breadcrumb",
+    "layout": "flex space-x-2 px-5 py-2",
+    "description": "Breadcrumb navigation with links",
+    "components": [],
+    "uiComponents": []
+  },
+  {
+    "type": "organism",
+    "name": "CTA",
+    "layout": "flex justify-center items-center p-5",
+    "description": "Call to action to proceed with checkout or continue shopping",
+    "components": [],
+    "uiComponents": ["Typography", "Button", "Dialog", "DialogTrigger"]
+  },
+  {
+    "type": "organism",
+    "name": "Footer",
+    "layout": "flex justify-between items-center p-5",
+    "description": "Footer consistent with the home page",
+    "components": [],
+    "uiComponents": ["Typography", "Box"]
+  },
+  {
+    "type": "page",
+    "name": "ProductListingPage",
+    "layout": "flex flex-col",
+    "description": "Online shopping product listing page",
+    "components": [
+      {
+        "type": "organism",
+        "name": "Header",
+        "layout": "flex justify-between items-center p-5",
+        "description": "Header with website logo, navigation menu, and search bar",
+        "components": []
+      },
+      {
+        "type": "organism",
+        "name": "FilterAndSort",
+        "layout": "flex flex-col p-5",
+        "description": "Filter and sorting options",
+        "components": [
+          {
+            "type": "molecule",
+            "name": "Filter",
+            "layout": "flex flex-col",
+            "description": "Filter products by category, price range, brand",
+            "components": []
+          },
+          {
+            "type": "molecule",
+            "name": "Sort",
+            "layout": "flex space-x-4",
+            "description": "Sort products by relevance, price, and ratings",
+            "components": []
+          }
+        ]
+      },
+      {
+        "type": "organism",
+        "name": "ProductListing",
+        "layout": "flex flex-wrap justify-between",
+        "description": "Display of product listings",
+        "components": [
+          {
+            "type": "molecule",
+            "name": "ProductCard",
+            "layout": "flex flex-col p-5 space-y-2",
+            "description": "Individual product card with image, details and 'Add to Cart' button",
+            "components": []
+          }
+        ]
+      },
+      {
+        "type": "organism",
+        "name": "Pagination",
+        "layout": "flex justify-center items-center p-5",
+        "description": "Pagination or infinite scroll component",
+        "components": []
+      },
+      {
+        "type": "organism",
+        "name": "QuickView",
+        "layout": "absolute top-0 left-0",
+        "description": "Quick view of product details on hover",
+        "components": []
+      },
+      {
+        "type": "organism",
+        "name": "Breadcrumb",
+        "layout": "flex space-x-2 px-5 py-2",
+        "description": "Breadcrumb navigation with links",
+        "components": []
+      },
+      {
+        "type": "organism",
+        "name": "CTA",
+        "layout": "flex justify-center items-center p-5",
+        "description": "Call to action to proceed with checkout or continue shopping",
+        "components": []
+      },
+      {
+        "type": "atom",
+        "name": "SocialMediaShare",
+        "layout": "flex space-x-2",
+        "description": "Social media sharing buttons",
+        "components": []
+      },
+      {
+        "type": "organism",
+        "name": "Footer",
+        "layout": "flex justify-between items-center p-5",
+        "description": "Footer consistent with the home page",
+        "components": []
+      }
+    ],
+    "uiComponents": [
+      "Typography",
+      "Button",
+      "Dialog",
+      "DialogContent",
+      "DialogDescription",
+      "DialogTitle",
+      "DialogTrigger",
+      "Alert",
+      "AlertDescription",
+      "AlertTitle",
+      "AlertDialogAction",
+      "AlertDialogCancel",
+      "AlertDialogContent",
+      "AlertDialogDescription",
+      "AlertDialogTitle",
+      "AlertDialogTrigger",
+      "AspectRatio",
+      "Avatar",
+      "AvatarFallback",
+      "AvatarImage",
+      "Badge",
+      "Box",
+      "Button",
+      "Calendar",
+      "Card",
+      "CardContent",
+      "CardDescription",
+      "CardFooter",
+      "CardHeader",
+      "CardTitle",
+      "Recharts",
+      "Checkbox",
+      "Collapsible",
+      "CollapsibleContent",
+      "CollapsibleTrigger",
+      "Command",
+      "CommandEmpty",
+      "CommandGroup",
+      "CommandInput",
+      "CommandItem",
+      "CommandList",
+      "CommandSeparator",
+      "ContextMenuCheckboxItem",
+      "ContextMenuContent",
+      "ContextMenuGroup",
+      "ContextMenuItem",
+      "ContextMenuLabel",
+      "ContextMenuRadioGroup",
+      "ContextMenuRadioItem",
+      "ContextMenuSeparator",
+      "ContextMenuSubContent",
+      "ContextMenuSubTrigger",
+      "ContextMenuTrigger",
+      "Dialog",
+      "DialogContent",
+      "DialogDescription",
+      "DialogTitle",
+      "DialogTrigger",
+      "DropdownMenuCheckboxItem",
+      "DropdownMenuContent",
+      "DropdownMenuGroup",
+      "DropdownMenuItem",
+      "DropdownMenuLabel",
+      "DropdownMenuRadioGroup",
+      "DropdownMenuRadioItem",
+      "DropdownMenuSeparator",
+      "DropdownMenuSubContent",
+      "DropdownMenuSubTrigger",
+      "DropdownMenuTrigger",
+      "HoverCardContent",
+      "HoverCardTrigger",
+      "Icons",
+      "Input",
+      "Label",
+      "Menubar",
+      "MenubarCheckboxItem",
+      "MenubarContent",
+      "MenubarGroup",
+      "MenubarItem",
+      "MenubarLabel",
+      "MenubarRadioGroup",
+      "MenubarRadioItem",
+      "MenubarSeparator",
+      "MenubarSubContent",
+      "MenubarSubTrigger",
+      "MenubarTrigger",
+      "NavigationMenu",
+      "NavigationMenuContent",
+      "NavigationMenuIndicator",
+      "NavigationMenuItem",
+      "NavigationMenuLink",
+      "NavigationMenuList",
+      "NavigationMenuTrigger",
+      "NavigationMenuViewport",
+      "NavLink",
+      "PopoverContent",
+      "PopoverTrigger",
+      "Progress",
+      "RadioGroup",
+      "RadioGroupItem",
+      "ScrollArea",
+      "ScrollBar",
+      "Select",
+      "SelectContent",
+      "SelectGroup",
+      "SelectItem",
+      "SelectLabel",
+      "SelectSeparator",
+      "SelectTrigger",
+      "SelectValue",
+      "Separator",
+      "SheetContent",
+      "SheetDescription",
+      "SheetTitle",
+      "SheetTrigger",
+      "Skeleton",
+      "Slider",
+      "Switch",
+      "Tabs",
+      "TabsContent",
+      "TabsList",
+      "TabsTrigger",
+      "Textarea",
+      "Toast",
+      "ToastAction",
+      "ToastClose",
+      "ToastDescription",
+      "ToastTitle",
+      "ToastViewport",
+      "Toggle",
+      "TooltipContent",
+      "TooltipTrigger",
+      "Typography"
+    ]
+  }
+]

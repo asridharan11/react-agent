@@ -19,7 +19,7 @@
   "badge": ["Badge"],
   "box": ["Box"],
   "button": ["Button"],
-  "calendar": [],
+  "calendar": ["Calendar"],
   "card": [
     "Card",
     "CardContent",
@@ -54,6 +54,7 @@
     "ContextMenuTrigger"
   ],
   "dialog": [
+    "Dialog",
     "DialogContent",
     "DialogDescription",
     "DialogTitle",
@@ -106,6 +107,7 @@
   "radio-group": ["RadioGroup", "RadioGroupItem"],
   "scroll-area": ["ScrollArea", "ScrollBar"],
   "select": [
+    "Select",
     "SelectContent",
     "SelectGroup",
     "SelectItem",

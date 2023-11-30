@@ -23,7 +23,7 @@ const fullFlow = async (containerPath: string) => {
   // await step7(containerPath);
 };
 
-const CONTAINER_PATH = "AnalyticsDashboard";
+const CONTAINER_PATH = "EcommerceApp/Home";
 export const generateComponents = async () => {
   console.log("generateComponents start");
   await fullFlow(CONTAINER_PATH);

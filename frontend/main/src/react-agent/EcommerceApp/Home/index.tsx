@@ -1,29 +1,34 @@
 
 import React from 'react';
-import NavigationToolbar from './NavigationToolbar';
-import AnnouncementBanner from './AnnouncementBanner';
-import ScrollableImageBanner from './ScrollableImageBanner';
-import ProductsCollectionOne from './ProductsCollectionOne';
-import ProductCollectionTwo from './ProductCollectionTwo';
+import Header from './Header';
+import FeaturedProducts from './FeaturedProducts';
+import PromotionAndDeals from './PromotionAndDeals';
+import ProductCategories from './ProductCategories';
+import NewArrivals from './NewArrivals';
+import UserReviews from './UserReviews';
+import Footer from './Footer';
 
-export interface HomePageProps {
-  navigationToolbarProps: React.ComponentProps<typeof NavigationToolbar>;
-  announcementBannerProps: React.ComponentProps<typeof AnnouncementBanner>;
-  scrollableImageBannerProps: React.ComponentProps<typeof ScrollableImageBanner>;
-  productsCollectionOneProps: React.ComponentProps<typeof ProductsCollectionOne>;
-  productCollectionTwoProps: React.ComponentProps<typeof ProductCollectionTwo>;
+export interface EcommerceHomePageProps {
+  logo: string;
+  products: Product[];
+  deals: Deal[];
+  categories: Category[];
+  newArrivals: Product[];
+  reviews: Review[];
 };
 
-const HomePage: React.FC<HomePageProps> = (props) => {
+const EcommerceHomePage: React.FC<EcommerceHomePageProps> = (props: EcommerceHomePageProps) => {
   return (
-    <div className="flex flex-col w-screen">
-      <NavigationToolbar {...props.navigationToolbarProps} />
-      <AnnouncementBanner {...props.announcementBannerProps} />
-      <ScrollableImageBanner {...props.scrollableImageBannerProps} />
-      <ProductsCollectionOne {...props.productsCollectionOneProps} />
-      <ProductCollectionTwo {...props.productCollectionTwoProps} />
+    <div className="flex flex-col">
+      <Header logo={props.logo} />
+      <FeaturedProducts products={props.products} />
+      <PromotionAndDeals deals={props.deals} />
+      <ProductCategories categories={props.categories} />
+      <NewArrivals products={props.newArrivals} />
+      <UserReviews reviews={props.reviews} />
+      <Footer />
     </div>
   );
 };
 
-export default HomePage;
+export default EcommerceHomePage;

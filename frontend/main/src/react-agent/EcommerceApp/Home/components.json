@@ -1,54 +1,35 @@
 [
   {
     "type": "organism",
-    "name": "NavigationToolbar",
-    "layout": "flex flex-row justify-between items-center h-16 p-4 border-b",
-    "description": "Navigation Toolbar with logo, title, navigation menu and cart",
+    "name": "Header",
+    "layout": "flex justify-between items-center px-4 py-2",
+    "description": "Header including logo and navigation menu",
     "components": [
       {
         "type": "atom",
-        "name": "CompanyLogo",
-        "layout": "w-10 h-10",
-        "description": "Company Logo"
-      },
-      {
-        "type": "atom",
-        "name": "CompanyName",
-        "layout": "w-auto h-auto text-xl",
-        "description": "Company Name"
+        "name": "Logo",
+        "layout": "w-auto h-8",
+        "description": "Website logo",
+        "components": []
       },
       {
         "type": "molecule",
         "name": "NavigationMenu",
-        "layout": "flex flex-row space-x-4",
-        "description": "Navigation Menu items"
-      },
-      {
-        "type": "atom",
-        "name": "CartLogo",
-        "layout": "w-10 h-10",
-        "description": "Cart logo with items count"
+        "layout": "flex space-x-4",
+        "description": "Menu for navigation",
+        "components": []
       }
     ],
     "uiComponents": [
-      "Box",
-      "Typography",
-      "NavigationMenu",
-      "NavigationMenuContent",
-      "NavigationMenuIndicator",
-      "NavigationMenuItem",
-      "NavigationMenuLink",
-      "NavigationMenuList",
-      "NavigationMenuTrigger",
-      "NavigationMenuViewport",
-      "Icons"
+      "NavigationMenu"
     ]
   },
   {
     "type": "molecule",
     "name": "NavigationMenu",
-    "layout": "flex flex-row space-x-4",
-    "description": "Navigation Menu items",
+    "layout": "flex space-x-4",
+    "description": "Menu for navigation",
+    "components": [],
     "uiComponents": [
       "NavigationMenu",
       "NavigationMenuContent",
@@ -62,65 +43,10 @@
   },
   {
     "type": "organism",
-    "name": "AnnouncementBanner",
-    "layout": "w-full h-48 text-center",
-    "description": "Announcement banner with auto rotation",
-    "components": [
-      {
-        "type": "atom",
-        "name": "OfferMessage",
-        "layout": "w-full h-full",
-        "description": "Rotating offer message"
-      }
-    ],
-    "uiComponents": [
-      "Typography",
-      "Box"
-    ]
-  },
-  {
-    "type": "organism",
-    "name": "ScrollableImageBanner",
-    "layout": "flex flex-row w-full h-64 overflow-x-auto",
-    "description": "Horizontal scrollable image banner",
-    "components": [
-      {
-        "type": "atom",
-        "name": "BannerImage",
-        "layout": "w-full h-full",
-        "description": "Banner image"
-      },
-      {
-        "type": "atom",
-        "name": "BannerIndicator",
-        "layout": "absolute bottom-0 right-0",
-        "description": "Indicator of total and current banner"
-      }
-    ],
-    "uiComponents": [
-      "Box",
-      "Typography"
-    ]
-  },
-  {
-    "type": "organism",
-    "name": "ProductsCollectionOne",
-    "layout": "flex flex-col w-full space-y-4",
-    "description": "Products collection one with popular items",
-    "components": [
-      {
-        "type": "atom",
-        "name": "CollectionTitle",
-        "layout": "text-2xl",
-        "description": "Collection title"
-      },
-      {
-        "type": "molecule",
-        "name": "ProductCard",
-        "layout": "flex flex-row space-x-2",
-        "description": "Product card with image, title and price"
-      }
-    ],
+    "name": "FeaturedProducts",
+    "layout": "grid grid-cols-3 gap-4 p-4",
+    "description": "Section showcasing Featured Products",
+    "components": [],
     "uiComponents": [
       "Typography",
       "Card",
@@ -128,240 +54,158 @@
       "CardDescription",
       "CardFooter",
       "CardHeader",
-      "CardTitle"
-    ]
-  },
-  {
-    "type": "molecule",
-    "name": "ProductCard",
-    "layout": "flex flex-row space-x-2",
-    "description": "Product card with image, title and price",
-    "uiComponents": [
-      "Card",
-      "CardContent",
-      "CardDescription",
-      "Typography"
+      "CardTitle",
+      "Button"
     ]
   },
   {
     "type": "organism",
-    "name": "ProductCollectionTwo",
-    "layout": "grid grid-cols-4 grid-rows-3 gap-2",
-    "description": "Grid style products collection",
-    "components": [
-      {
-        "type": "molecule",
-        "name": "GridProductCard",
-        "layout": "w-full h-full p-2",
-        "description": "Grid style product card with image, title and price"
-      }
-    ],
+    "name": "PromotionAndDeals",
+    "layout": "grid grid-cols-2 gap-4 p-4",
+    "description": "Section for promotion and deals",
+    "components": [],
     "uiComponents": [
+      "Box",
       "Card",
       "CardContent",
       "CardDescription",
-      "CardTitle"
+      "Typography",
+      "Button"
     ]
   },
   {
-    "type": "molecule",
-    "name": "GridProductCard",
-    "layout": "w-full h-full p-2",
-    "description": "Grid style product card with image, title and price",
+    "type": "organism",
+    "name": "ProductCategories",
+    "layout": "grid grid-cols-2 md:grid-cols-4 gap-4 p-4",
+    "description": "Section of product categories",
+    "components": [],
     "uiComponents": [
+      "Typography",
       "Card",
-      "CardContent",
       "CardTitle",
-      "Typography"
+      "CardDescription",
+      "Button"
     ]
   },
   {
-    "type": "page",
-    "name": "HomePage",
-    "layout": "flex flex-col w-screen",
-    "description": "Home Page for eCommerce store",
-    "components": [
-      {
-        "type": "organism",
-        "name": "NavigationToolbar",
-        "layout": "flex flex-row justify-between items-center h-16 p-4 border-b",
-        "description": "Navigation Toolbar with logo, title, navigation menu and cart",
-        "components": [
-          {
-            "type": "atom",
-            "name": "CompanyLogo",
-            "layout": "w-10 h-10",
-            "description": "Company Logo"
-          },
-          {
-            "type": "atom",
-            "name": "CompanyName",
-            "layout": "w-auto h-auto text-xl",
-            "description": "Company Name"
-          },
-          {
-            "type": "molecule",
-            "name": "NavigationMenu",
-            "layout": "flex flex-row space-x-4",
-            "description": "Navigation Menu items"
-          },
-          {
-            "type": "atom",
-            "name": "CartLogo",
-            "layout": "w-10 h-10",
-            "description": "Cart logo with items count"
-          }
-        ]
-      },
-      {
-        "type": "organism",
-        "name": "AnnouncementBanner",
-        "layout": "w-full h-48 text-center",
-        "description": "Announcement banner with auto rotation",
-        "components": [
-          {
-            "type": "atom",
-            "name": "OfferMessage",
-            "layout": "w-full h-full",
-            "description": "Rotating offer message"
-          }
-        ]
-      },
-      {
-        "type": "organism",
-        "name": "ScrollableImageBanner",
-        "layout": "flex flex-row w-full h-64 overflow-x-auto",
-        "description": "Horizontal scrollable image banner",
-        "components": [
-          {
-            "type": "atom",
-            "name": "BannerImage",
-            "layout": "w-full h-full",
-            "description": "Banner image"
-          },
-          {
-            "type": "atom",
-            "name": "BannerIndicator",
-            "layout": "absolute bottom-0 right-0",
-            "description": "Indicator of total and current banner"
-          }
-        ]
-      },
-      {
-        "type": "organism",
-        "name": "ProductsCollectionOne",
-        "layout": "flex flex-col w-full space-y-4",
-        "description": "Products collection one with popular items",
-        "components": [
-          {
-            "type": "atom",
-            "name": "CollectionTitle",
-            "layout": "text-2xl",
-            "description": "Collection title"
-          },
-          {
-            "type": "molecule",
-            "name": "ProductCard",
-            "layout": "flex flex-row space-x-2",
-            "description": "Product card with image, title and price"
-          }
-        ]
-      },
-      {
-        "type": "organism",
-        "name": "ProductCollectionTwo",
-        "layout": "grid grid-cols-4 grid-rows-3 gap-2",
-        "description": "Grid style products collection",
-        "components": [
-          {
-            "type": "molecule",
-            "name": "GridProductCard",
-            "layout": "w-full h-full p-2",
-            "description": "Grid style product card with image, title and price"
-          }
-        ]
-      }
-    ],
+    "type": "organism",
+    "name": "NewArrivals",
+    "layout": "grid grid-cols-3 gap-4 p-4",
+    "description": "Section showcasing new arrivals",
+    "components": [],
     "uiComponents": [
       "Typography",
       "Button",
       "DialogContent",
       "DialogDescription",
       "DialogTitle",
-      "DialogTrigger",
+      "DialogTrigger"
+    ]
+  },
+  {
+    "type": "organism",
+    "name": "UserReviews",
+    "layout": "space-y-4 p-4",
+    "description": "Section showing user reviews",
+    "components": [],
+    "uiComponents": [
+      "Typography",
+      "Button",
       "Card",
-      "CardContent",
-      "CardDescription",
-      "CardFooter",
-      "CardHeader",
-      "CardTitle",
-      "Recharts",
-      "Checkbox",
-      "Input",
-      "Label",
-      "Menubar",
-      "MenubarCheckboxItem",
-      "MenubarContent",
-      "MenubarGroup",
-      "MenubarItem",
-      "MenubarLabel",
-      "MenubarRadioGroup",
-      "MenubarRadioItem",
-      "MenubarSeparator",
-      "MenubarSubContent",
-      "MenubarSubTrigger",
-      "MenubarTrigger",
-      "NavigationMenu",
-      "NavigationMenuContent",
-      "NavigationMenuIndicator",
-      "NavigationMenuItem",
-      "NavigationMenuLink",
-      "NavigationMenuList",
-      "NavigationMenuTrigger",
-      "NavigationMenuViewport",
-      "PopoverContent",
-      "PopoverTrigger",
-      "Progress",
-      "ScrollArea",
-      "ScrollBar",
-      "SelectContent",
-      "SelectGroup",
-      "SelectItem",
-      "SelectLabel",
-      "SelectSeparator",
-      "SelectTrigger",
-      "SelectValue",
-      "Separator",
-      "Skeleton",
-      "Slider",
-      "Switch",
-      "Tabs",
-      "TabsContent",
-      "TabsList",
-      "TabsTrigger",
-      "Textarea",
-      "Toast",
-      "ToastAction",
-      "ToastClose",
-      "ToastDescription",
-      "ToastTitle",
-      "ToastViewport",
-      "TooltipContent",
-      "TooltipTrigger",
-      "Alert",
-      "AlertDescription",
-      "AlertTitle",
-      "AspectRatio",
-      "Avatar",
-      "AvatarFallback",
-      "AvatarImage",
-      "Badge",
+      "CardDescription"
+    ]
+  },
+  {
+    "type": "organism",
+    "name": "Footer",
+    "layout": "py-4 px-2 mt-auto bg-gray-200",
+    "description": "Footer with useful links",
+    "components": [],
+    "uiComponents": [
       "Box",
-      "Icons",
-      "NavLink",
-      "RadioGroup",
-      "RadioGroupItem",
-      "Toggle"
+      "Typography"
+    ]
+  },
+  {
+    "type": "page",
+    "name": "EcommerceHomePage",
+    "layout": "flex flex-col",
+    "description": "Home page of an Ecommerce website",
+    "components": [
+      {
+        "type": "organism",
+        "name": "Header",
+        "layout": "flex justify-between items-center px-4 py-2",
+        "description": "Header including logo and navigation menu",
+        "components": [
+          {
+            "type": "atom",
+            "name": "Logo",
+            "layout": "w-auto h-8",
+            "description": "Website logo",
+            "components": []
+          },
+          {
+            "type": "molecule",
+            "name": "NavigationMenu",
+            "layout": "flex space-x-4",
+            "description": "Menu for navigation",
+            "components": []
+          }
+        ]
+      },
+      {
+        "type": "atom",
+        "name": "SearchBar",
+        "layout": "my-4 mx-auto w-full max-w-md px-2 py-2",
+        "description": "Search bar for product search",
+        "components": []
+      },
+      {
+        "type": "organism",
+        "name": "FeaturedProducts",
+        "layout": "grid grid-cols-3 gap-4 p-4",
+        "description": "Section showcasing Featured Products",
+        "components": []
+      },
+      {
+        "type": "organism",
+        "name": "PromotionAndDeals",
+        "layout": "grid grid-cols-2 gap-4 p-4",
+        "description": "Section for promotion and deals",
+        "components": []
+      },
+      {
+        "type": "organism",
+        "name": "ProductCategories",
+        "layout": "grid grid-cols-2 md:grid-cols-4 gap-4 p-4",
+        "description": "Section of product categories",
+        "components": []
+      },
+      {
+        "type": "organism",
+        "name": "NewArrivals",
+        "layout": "grid grid-cols-3 gap-4 p-4",
+        "description": "Section showcasing new arrivals",
+        "components": []
+      },
+      {
+        "type": "organism",
+        "name": "UserReviews",
+        "layout": "space-y-4 p-4",
+        "description": "Section showing user reviews",
+        "components": []
+      },
+      {
+        "type": "organism",
+        "name": "Footer",
+        "layout": "py-4 px-2 mt-auto bg-gray-200",
+        "description": "Footer with useful links",
+        "components": []
+      }
+    ],
+    "uiComponents": [
+      "NavigationMenu"
     ]
   }
 ]

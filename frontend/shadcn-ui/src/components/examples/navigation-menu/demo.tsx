@@ -55,7 +55,9 @@ export function NavigationMenuDemo() {
         <NavigationMenuList>
           <NavigationMenuItem>
             <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
+            {/* Note: <NavigationMenuTrigger> can only be inside <NavigationMenuItem> component */}
             <NavigationMenuContent>
+              {/* Note:  <NavigationMenuContent> can only be inside <NavigationMenuItem> component */}
               <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                 <li className="row-span-3">
                   <NavigationMenuLink asChild>

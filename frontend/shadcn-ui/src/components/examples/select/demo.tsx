@@ -13,10 +13,13 @@ import {
 export function SelectDemo() {
   return (
     <Select>
+      {/* <Select> has to be top level tag */}
       <SelectTrigger className="w-[180px]">
+        {/* <SelectTrigger> has to be inside <Select> tag */}
         <SelectValue placeholder="Select a fruit" />
       </SelectTrigger>
       <SelectContent>
+        {/* <SelectContent> has to be inside <Select> tag */}
         <SelectGroup>
           <SelectLabel>Fruits</SelectLabel>
           <SelectItem value="apple">Apple</SelectItem>

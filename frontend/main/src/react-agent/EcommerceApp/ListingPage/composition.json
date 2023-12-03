@@ -2,92 +2,72 @@
   "type": "page",
   "name": "ProductListingPage",
   "layout": "flex flex-col",
-  "description": "Online shopping product listing page",
+  "description": "Product Listing Page",
   "components": [
     {
       "type": "organism",
       "name": "Header",
-      "layout": "flex justify-between items-center p-5",
-      "description": "Header with website logo, navigation menu, and search bar",
+      "layout": "flex h-12 items-center",
+      "description": "Page Header with Logo, Navigation Menu and Search Bar",
       "components": []
     },
     {
       "type": "organism",
-      "name": "FilterAndSort",
-      "layout": "flex flex-col p-5",
-      "description": "Filter and sorting options",
+      "name": "FilterSortSection",
+      "layout": "flex flex-col w-1/4",
+      "description": "Section for filters and sorting options",
       "components": [
         {
           "type": "molecule",
-          "name": "Filter",
+          "name": "Filters",
           "layout": "flex flex-col",
-          "description": "Filter products by category, price range, brand",
+          "description": "Filter options based on specific criteria such as category, price range, etc.",
           "components": []
         },
         {
           "type": "molecule",
-          "name": "Sort",
-          "layout": "flex space-x-4",
-          "description": "Sort products by relevance, price, and ratings",
+          "name": "SortOptions",
+          "layout": "flex flex-row",
+          "description": "Sorting options like relevance, price and ratings",
           "components": []
         }
       ]
     },
     {
       "type": "organism",
-      "name": "ProductListing",
-      "layout": "flex flex-wrap justify-between",
-      "description": "Display of product listings",
+      "name": "ProductListingSection",
+      "layout": "flex flex-wrap w-3/4",
+      "description": "Section displaying product listings",
       "components": [
         {
           "type": "molecule",
           "name": "ProductCard",
-          "layout": "flex flex-col p-5 space-y-2",
-          "description": "Individual product card with image, details and 'Add to Cart' button",
+          "layout": "flex flex-col w-60 h-auto m-2",
+          "description": "Product card showing product image, name, price and a brief description",
+          "components": [
+            {
+              "type": "atom",
+              "name": "AddToCartButton",
+              "layout": "flex items-center justify-center w-full h-10",
+              "description": "Button to add product to cart",
+              "components": []
+            }
+          ]
+        },
+        {
+          "type": "atom",
+          "name": "Pagination",
+          "layout": "flex items-center justify-center mt-5",
+          "description": "Pagination Component for product listing",
           "components": []
         }
       ]
     },
     {
       "type": "organism",
-      "name": "Pagination",
-      "layout": "flex justify-center items-center p-5",
-      "description": "Pagination or infinite scroll component",
-      "components": []
-    },
-    {
-      "type": "organism",
-      "name": "QuickView",
-      "layout": "absolute top-0 left-0",
-      "description": "Quick view of product details on hover",
-      "components": []
-    },
-    {
-      "type": "organism",
-      "name": "Breadcrumb",
-      "layout": "flex space-x-2 px-5 py-2",
-      "description": "Breadcrumb navigation with links",
-      "components": []
-    },
-    {
-      "type": "organism",
-      "name": "CTA",
-      "layout": "flex justify-center items-center p-5",
-      "description": "Call to action to proceed with checkout or continue shopping",
-      "components": []
-    },
-    {
-      "type": "atom",
-      "name": "SocialMediaShare",
-      "layout": "flex space-x-2",
-      "description": "Social media sharing buttons",
-      "components": []
-    },
-    {
-      "type": "organism",
       "name": "Footer",
-      "layout": "flex justify-between items-center p-5",
-      "description": "Footer consistent with the home page",
+      "layout": "flex h-12 items-center",
+      "description": "Page Footer with additional links and information",
       "components": []
     }
   ]

@@ -1,0 +1,414 @@
+[
+  {
+    "type": "organism",
+    "name": "Navbar",
+    "layout": "hidden md:flex md:flex-shrink-0 md:h-full md:w-64",
+    "description": "Navbar with navigation options",
+    "components": [
+      {
+        "type": "atom",
+        "name": "NavLogo",
+        "layout": "w-full h-16 flex justify-between items-center px-6",
+        "description": "Company logo on navbar",
+        "components": []
+      },
+      {
+        "type": "atom",
+        "name": "NavItems",
+        "layout": "w-full flex flex-col",
+        "description": "Navigation items on navbar",
+        "components": []
+      }
+    ],
+    "uiComponents": [
+      "NavigationMenu",
+      "NavigationMenuContent",
+      "NavigationMenuIndicator",
+      "NavigationMenuItem",
+      "NavigationMenuLink",
+      "NavigationMenuList",
+      "NavigationMenuTrigger",
+      "NavigationMenuViewport",
+      "Typography"
+    ]
+  },
+  {
+    "type": "organism",
+    "name": "TimesheetForm",
+    "layout": "flex-1 w-0 flex flex-col md:ml-64",
+    "description": "Form for timesheet submission",
+    "components": [
+      {
+        "type": "molecule",
+        "name": "FormHeader",
+        "layout": "h-16 flex items-center justify-between px-6",
+        "description": "Header for form",
+        "components": [
+          {
+            "type": "atom",
+            "name": "FormTitle",
+            "layout": "w-auto h-auto",
+            "description": "Title for form - Timesheet Submission",
+            "components": []
+          },
+          {
+            "type": "atom",
+            "name": "FormButton",
+            "layout": "w-auto h-auto",
+            "description": "Button for form submission",
+            "components": []
+          }
+        ]
+      },
+      {
+        "type": "molecule",
+        "name": "FormBody",
+        "layout": "flex-1 overflow-y-auto p-6",
+        "description": "Body of form containing form fields",
+        "components": [
+          {
+            "type": "atom",
+            "name": "FormInput",
+            "layout": "w-full",
+            "description": "Inputs for form fields",
+            "components": []
+          },
+          {
+            "type": "atom",
+            "name": "FormSelect",
+            "layout": "w-full",
+            "description": "Dropdown options for form fields",
+            "components": []
+          },
+          {
+            "type": "atom",
+            "name": "FormCheckbox",
+            "layout": "w-4 h-4",
+            "description": "Checkboxes for form fields",
+            "components": []
+          },
+          {
+            "type": "atom",
+            "name": "FormButton",
+            "layout": "w-auto h-auto",
+            "description": "Button for form submission",
+            "components": []
+          },
+          {
+            "type": "atom",
+            "name": "FormAlert",
+            "layout": "w-full",
+            "description": "Alerts related to form submission",
+            "components": []
+          },
+          {
+            "type": "atom",
+            "name": "FormInfo",
+            "layout": "w-full",
+            "description": "Instructions or extra information related to form",
+            "components": []
+          }
+        ]
+      },
+      {
+        "type": "molecule",
+        "name": "FormFooter",
+        "layout": "w-full h-20 px-6 py-6 border-t flex items-center justify-end gap-3",
+        "description": "Footer of form containing navigation buttons",
+        "components": [
+          {
+            "type": "atom",
+            "name": "FormButton",
+            "layout": "w-auto h-auto flex items-center justify-center",
+            "description": "Buttons for previous, save or next on form",
+            "components": []
+          }
+        ]
+      }
+    ],
+    "uiComponents": [
+      "Typography",
+      "Button",
+      "Dialog",
+      "DialogContent",
+      "DialogDescription",
+      "DialogTitle",
+      "DialogTrigger",
+      "Checkbox",
+      "Input",
+      "Select",
+      "Alert"
+    ]
+  },
+  {
+    "type": "molecule",
+    "name": "FormHeader",
+    "layout": "h-16 flex items-center justify-between px-6",
+    "description": "Header for form",
+    "components": [
+      {
+        "type": "atom",
+        "name": "FormTitle",
+        "layout": "w-auto h-auto",
+        "description": "Title for form - Timesheet Submission",
+        "components": []
+      },
+      {
+        "type": "atom",
+        "name": "FormButton",
+        "layout": "w-auto h-auto",
+        "description": "Button for form submission",
+        "components": []
+      }
+    ],
+    "uiComponents": [
+      "Typography",
+      "Button"
+    ]
+  },
+  {
+    "type": "molecule",
+    "name": "FormBody",
+    "layout": "flex-1 overflow-y-auto p-6",
+    "description": "Body of form containing form fields",
+    "components": [
+      {
+        "type": "atom",
+        "name": "FormInput",
+        "layout": "w-full",
+        "description": "Inputs for form fields",
+        "components": []
+      },
+      {
+        "type": "atom",
+        "name": "FormSelect",
+        "layout": "w-full",
+        "description": "Dropdown options for form fields",
+        "components": []
+      },
+      {
+        "type": "atom",
+        "name": "FormCheckbox",
+        "layout": "w-4 h-4",
+        "description": "Checkboxes for form fields",
+        "components": []
+      },
+      {
+        "type": "atom",
+        "name": "FormButton",
+        "layout": "w-auto h-auto",
+        "description": "Button for form submission",
+        "components": []
+      },
+      {
+        "type": "atom",
+        "name": "FormAlert",
+        "layout": "w-full",
+        "description": "Alerts related to form submission",
+        "components": []
+      },
+      {
+        "type": "atom",
+        "name": "FormInfo",
+        "layout": "w-full",
+        "description": "Instructions or extra information related to form",
+        "components": []
+      }
+    ],
+    "uiComponents": [
+      "Box",
+      "Input",
+      "Select",
+      "Checkbox",
+      "Button",
+      "Alert",
+      "Typography"
+    ]
+  },
+  {
+    "type": "molecule",
+    "name": "FormFooter",
+    "layout": "w-full h-20 px-6 py-6 border-t flex items-center justify-end gap-3",
+    "description": "Footer of form containing navigation buttons",
+    "components": [
+      {
+        "type": "atom",
+        "name": "FormButton",
+        "layout": "w-auto h-auto flex items-center justify-center",
+        "description": "Buttons for previous, save or next on form",
+        "components": []
+      }
+    ],
+    "uiComponents": [
+      "Button"
+    ]
+  },
+  {
+    "type": "page",
+    "name": "TimesheetSubmission",
+    "layout": "flex flex-col md:flex-row",
+    "description": "Page for timesheet submission",
+    "components": [
+      {
+        "type": "organism",
+        "name": "Navbar",
+        "layout": "hidden md:flex md:flex-shrink-0 md:h-full md:w-64",
+        "description": "Navbar with navigation options",
+        "components": [
+          {
+            "type": "atom",
+            "name": "NavLogo",
+            "layout": "w-full h-16 flex justify-between items-center px-6",
+            "description": "Company logo on navbar",
+            "components": []
+          },
+          {
+            "type": "atom",
+            "name": "NavItems",
+            "layout": "w-full flex flex-col",
+            "description": "Navigation items on navbar",
+            "components": []
+          }
+        ]
+      },
+      {
+        "type": "organism",
+        "name": "TimesheetForm",
+        "layout": "flex-1 w-0 flex flex-col md:ml-64",
+        "description": "Form for timesheet submission",
+        "components": [
+          {
+            "type": "molecule",
+            "name": "FormHeader",
+            "layout": "h-16 flex items-center justify-between px-6",
+            "description": "Header for form",
+            "components": [
+              {
+                "type": "atom",
+                "name": "FormTitle",
+                "layout": "w-auto h-auto",
+                "description": "Title for form - Timesheet Submission",
+                "components": []
+              },
+              {
+                "type": "atom",
+                "name": "FormButton",
+                "layout": "w-auto h-auto",
+                "description": "Button for form submission",
+                "components": []
+              }
+            ]
+          },
+          {
+            "type": "molecule",
+            "name": "FormBody",
+            "layout": "flex-1 overflow-y-auto p-6",
+            "description": "Body of form containing form fields",
+            "components": [
+              {
+                "type": "atom",
+                "name": "FormInput",
+                "layout": "w-full",
+                "description": "Inputs for form fields",
+                "components": []
+              },
+              {
+                "type": "atom",
+                "name": "FormSelect",
+                "layout": "w-full",
+                "description": "Dropdown options for form fields",
+                "components": []
+              },
+              {
+                "type": "atom",
+                "name": "FormCheckbox",
+                "layout": "w-4 h-4",
+                "description": "Checkboxes for form fields",
+                "components": []
+              },
+              {
+                "type": "atom",
+                "name": "FormButton",
+                "layout": "w-auto h-auto",
+                "description": "Button for form submission",
+                "components": []
+              },
+              {
+                "type": "atom",
+                "name": "FormAlert",
+                "layout": "w-full",
+                "description": "Alerts related to form submission",
+                "components": []
+              },
+              {
+                "type": "atom",
+                "name": "FormInfo",
+                "layout": "w-full",
+                "description": "Instructions or extra information related to form",
+                "components": []
+              }
+            ]
+          },
+          {
+            "type": "molecule",
+            "name": "FormFooter",
+            "layout": "w-full h-20 px-6 py-6 border-t flex items-center justify-end gap-3",
+            "description": "Footer of form containing navigation buttons",
+            "components": [
+              {
+                "type": "atom",
+                "name": "FormButton",
+                "layout": "w-auto h-auto flex items-center justify-center",
+                "description": "Buttons for previous, save or next on form",
+                "components": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "uiComponents": [
+      "Typography",
+      "Button",
+      "Dialog",
+      "DialogContent",
+      "DialogDescription",
+      "DialogTitle",
+      "DialogTrigger",
+      "Input",
+      "Select",
+      "Checkbox",
+      "Alert",
+      "AlertDescription",
+      "AlertTitle",
+      "Avatar",
+      "AvatarFallback",
+      "AvatarImage",
+      "Badge",
+      "Box",
+      "DropdownMenuCheckboxItem",
+      "DropdownMenuContent",
+      "DropdownMenuGroup",
+      "DropdownMenuItem",
+      "DropdownMenuLabel",
+      "DropdownMenuRadioGroup",
+      "DropdownMenuRadioItem",
+      "DropdownMenuSeparator",
+      "DropdownMenuSubContent",
+      "DropdownMenuSubTrigger",
+      "DropdownMenuTrigger",
+      "NavigationMenu",
+      "NavigationMenuContent",
+      "NavigationMenuIndicator",
+      "NavigationMenuItem",
+      "NavigationMenuLink",
+      "NavigationMenuList",
+      "NavigationMenuTrigger",
+      "NavigationMenuViewport",
+      "Tabs",
+      "TabsContent",
+      "TabsList",
+      "TabsTrigger"
+    ]
+  }
+]

@@ -1,24 +1,21 @@
 
 import React from 'react';
-import { Typography, Button, Box } from '@react-agent/shadcn-ui';
+import { Typography, Button } from '@react-agent/shadcn-ui'
+
 
 export interface FooterProps {
-  onClick?: () => void;
+  additionalInfo?: string;
+  onButtonClick?: () => void;
 };
 
-const Footer: React.FC<FooterProps> = ({onClick}) => {
+const Footer: React.FC<FooterProps> = ({additionalInfo, onButtonClick}) => {
   return (
-    <Box className="flex justify-between items-center p-5 bg-gray-800 text-white">
-      <Typography variant="h6" align="center" color="white">
-        Your Company © 2022
+    <div className="h-12 flex items-center justify-between p-3 bg-gray-200">
+      <Typography variant="body" align="left" color="primary">
+          {additionalInfo ? additionalInfo : 'Your Website Name © 2022'}
       </Typography>
-      <Box className="space-x-4">
-        <Button variant="link" onClick={onClick}>About</Button>
-        <Button variant="link" onClick={onClick}>Help</Button>
-        <Button variant="link" onClick={onClick}>Privacy</Button>
-        <Button variant="link" onClick={onClick}>Terms</Button>
-      </Box>
-    </Box>
+      <Button variant="outline" className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" onClick={onButtonClick}>Button Name</Button>
+    </div>
   );
 };
 

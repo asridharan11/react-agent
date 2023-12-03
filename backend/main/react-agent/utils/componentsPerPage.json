@@ -71,7 +71,8 @@
     "DropdownMenuSeparator",
     "DropdownMenuSubContent",
     "DropdownMenuSubTrigger",
-    "DropdownMenuTrigger"
+    "DropdownMenuTrigger",
+    "DropdownMenu"
   ],
   "hover-card": ["HoverCardContent", "HoverCardTrigger"],
   "icons": ["Icons"],

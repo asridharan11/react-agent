@@ -1,73 +1,124 @@
 {
   "type": "page",
   "name": "ProductListingPage",
-  "layout": "flex flex-col",
+  "layout": "hidden flex",
   "description": "Product Listing Page",
   "components": [
     {
       "type": "organism",
       "name": "Header",
-      "layout": "flex h-12 items-center",
-      "description": "Page Header with Logo, Navigation Menu and Search Bar",
+      "layout": "flex h-16 items-center px-4 border-b",
+      "description": "Consistent header with website logo, navigation menu, and search bar",
       "components": []
     },
     {
       "type": "organism",
-      "name": "FilterSortSection",
-      "layout": "flex flex-col w-1/4",
-      "description": "Section for filters and sorting options",
+      "name": "FilterAndSort",
+      "layout": "hidden md:flex h-full w-72 p-4 border-r overflow-y-auto",
+      "description": "Visible and easily accessible filter and sort options",
       "components": [
         {
           "type": "molecule",
-          "name": "Filters",
-          "layout": "flex flex-col",
-          "description": "Filter options based on specific criteria such as category, price range, etc.",
-          "components": []
-        },
-        {
-          "type": "molecule",
-          "name": "SortOptions",
-          "layout": "flex flex-row",
-          "description": "Sorting options like relevance, price and ratings",
-          "components": []
-        }
-      ]
-    },
-    {
-      "type": "organism",
-      "name": "ProductListingSection",
-      "layout": "flex flex-wrap w-3/4",
-      "description": "Section displaying product listings",
-      "components": [
-        {
-          "type": "molecule",
-          "name": "ProductCard",
-          "layout": "flex flex-col w-60 h-auto m-2",
-          "description": "Product card showing product image, name, price and a brief description",
+          "name": "FilterSection",
+          "layout": "flex flex-col space-y-4",
+          "description": "Component for filtering products",
           "components": [
             {
               "type": "atom",
-              "name": "AddToCartButton",
-              "layout": "flex items-center justify-center w-full h-10",
-              "description": "Button to add product to cart",
+              "name": "FilterByPrice",
+              "layout": "w-full p-2",
+              "description": "Filter products by price range",
+              "components": []
+            },
+            {
+              "type": "atom",
+              "name": "FilterBySize",
+              "layout": "w-full p-2",
+              "description": "Filter products by size",
               "components": []
             }
           ]
         },
         {
-          "type": "atom",
-          "name": "Pagination",
-          "layout": "flex items-center justify-center mt-5",
-          "description": "Pagination Component for product listing",
-          "components": []
+          "type": "molecule",
+          "name": "SortSection",
+          "layout": "flex flex-col space-y-4",
+          "description": "Component for sorting products",
+          "components": [
+            {
+              "type": "atom",
+              "name": "SortByRelevance",
+              "layout": "w-full p-2",
+              "description": "Sort products by relevance",
+              "components": []
+            },
+            {
+              "type": "atom",
+              "name": "SortByPrice",
+              "layout": "w-full p-2",
+              "description": "Sort products by price",
+              "components": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "organism",
+      "name": "ProductListingDisplay",
+      "layout": "flex-1 p-4 overflow-y-auto",
+      "description": "Section to display products in a grid format",
+      "components": [
+        {
+          "type": "molecule",
+          "name": "ProductCard",
+          "layout": "w-full p-4 flex flex-col items-center border",
+          "description": "Card component to display product details",
+          "components": [
+            {
+              "type": "atom",
+              "name": "ProductImage",
+              "layout": "w-full h-64 object-cover mb-4",
+              "description": "Product image",
+              "components": []
+            },
+            {
+              "type": "atom",
+              "name": "ProductTitle",
+              "layout": "text-lg font-bold",
+              "description": "Product title",
+              "components": []
+            },
+            {
+              "type": "atom",
+              "name": "ProductPrice",
+              "layout": "text-sm",
+              "description": "Product price",
+              "components": []
+            },
+            {
+              "type": "atom",
+              "name": "ProductDescription",
+              "layout": "text-sm",
+              "description": "Product description",
+              "components": []
+            },
+            {
+              "type": "atom",
+              "name": "AddToCartButton",
+              "layout": "w-full py-2 bg-primary text-white rounded",
+              "description": "Add to Cart button",
+              "components": []
+            }
+          ]
         }
       ]
     },
     {
       "type": "organism",
       "name": "Footer",
-      "layout": "flex h-12 items-center",
-      "description": "Page Footer with additional links and information",
+      "layout": "flex h-16 items-center px-4 border-t",
+      "description": "Consistent footer with additional links and information",
       "components": []
     }
   ]

@@ -1,9 +1,13 @@
-import OpenAI from 'openai';
-import { ChatCompletionMessageParam, ChatCompletionUserMessageParam, ChatCompletionSystemMessageParam, } from 'openai/src/resources/chat/completions';
+import OpenAI from "openai";
+import {
+  ChatCompletionMessageParam,
+  ChatCompletionUserMessageParam,
+  ChatCompletionSystemMessageParam,
+} from "openai/src/resources/chat/completions";
 
 const apiKey = process.env.OPENAI_SECRET_KEY;
 const shouldLog = process.env.OPENAI_LOG === "true";
-const defaultModel = "gpt-4";
+const defaultModel = "gpt-3.5-turbo-16k";
 
 const getJsonFromMarkupText = (text: string) => {
   try {
@@ -137,10 +141,9 @@ class ChatBot {
   private model: string;
 
   constructor(model: string = defaultModel) {
-
     this.openai = new OpenAI({ apiKey, maxRetries: 100 });
     this.model = model;
-    this.openai.completions.create
+    this.openai.completions.create;
   }
 
   async callChat(messages: ChatCompletionMessageParam[]) {
@@ -149,7 +152,7 @@ class ChatBot {
     const params: OpenAI.Chat.ChatCompletionCreateParams = {
       model: this.model,
       messages: apiMessages,
-    }
+    };
 
     const response = await this.openai.chat.completions.create(params);
     if (shouldLog) console.debug(`ChatBot ~ response:`, response.choices);

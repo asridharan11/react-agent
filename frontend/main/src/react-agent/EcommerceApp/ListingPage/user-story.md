@@ -166,11 +166,3 @@ The header remains consistent with the home page, featuring the website logo, na
 To enhance the user experience, hover effects are implemented for product images, providing users with additional details upon hover. Users can easily manage their shopping cart directly from the product listing page, allowing for item removal or quantity adjustments.
 
 Optionally, social media sharing buttons are included, giving users the opportunity to share their favorite products on various platforms. The overall design prioritizes cleanliness, usability, and quick load times, ensuring a seamless and enjoyable shopping experience.
-
-```
-
-```
-
-```
-
-```

@@ -40,8 +40,8 @@ export class ReactComponentGenerator {
   private model: string;
 
   constructor() {
-    this.model = "gpt-4";
-    // this.model = "gpt-3.5-turbo";
+    //this.model = "gpt-4";
+    this.model = "gpt-3.5-turbo-16k";
     this.chatbot = new ChatBot(this.model);
   }
 

@@ -110,7 +110,7 @@ export const generateComposedComponent =
     const dirPath = path.join(dir, containerPath);
     const configurations = await readComponentsConfigurations(dirPath);
     const userStory = await readUserStory(dirPath);
-    const components = configurations.filter((config) => config.type === type);
+    const components = configurations.filter((config) => config?.type === type);
     const generateComponent = async (component: Component) => {
       const uiCompImplementations = await Promise.all(
         component.uiComponents.map(getComponentImplementation)

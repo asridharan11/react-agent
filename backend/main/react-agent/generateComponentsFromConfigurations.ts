@@ -87,7 +87,7 @@ export const generateComponentsFromConfigurations = async (
 
   const userStory = await readUserStory(dirPath);
   const components = configurations.filter(
-    (config) => config.type === "molecule"
+    (config) => config?.type === "molecule"
   );
 
   const generateComponent = async (component: Component) => {
@@ -96,7 +96,7 @@ export const generateComponentsFromConfigurations = async (
     );
 
     const parentComponent = configurations
-      .filter((config) => config.type === "organism")
+      .filter((config) => config?.type === "organism")
       .find((c) =>
         parseComposition(c)
           .molecules.map((c) => c.name)

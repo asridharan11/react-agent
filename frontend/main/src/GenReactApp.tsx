@@ -10,7 +10,7 @@ import landingPageJsonComposition from './react-agent/SaaSLandingPageExample/com
 import SaasCrmLandingPageDemo from './react-agent/SaaSLandingPageExample/demo';
 import HomePageDemo from './react-agent/EcommerceApp/Home/demo';
 import ProductListingPageDemo from './react-agent/EcommerceApp/ListingPage/demo';
-import ProductDetailsPage from './react-agent/EcommerceApp/ProductDetails';
+import ProductDetailsPage from './react-agent/EcommerceApp/PDP';
 import ProductListingPage from './react-agent/EcommerceApp/ListingPage';
 import EcommerceHomePageDemo from './react-agent/EcommerceApp/Home/demo';
 
@@ -38,7 +38,7 @@ const AnalyticsDashboard = () => {
 function App() {
   return (
     <BrowserRouter>
-      <EcommerceHomePageDemo />
+      <ProductDetailsPage />
       {/* <AnalyticsDashboard /> */}
       {/* <SaasCrmLandingPageExample /> */}
     </BrowserRouter>

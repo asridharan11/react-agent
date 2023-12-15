@@ -1,0 +1,108 @@
+{
+  "type": "page",
+  "name": "ProductDetailsPage",
+  "layout": "grid grid-cols-1",
+  "description": "Display details about a specific product",
+  "components": [
+    {
+      "type": "organism",
+      "name": "Header",
+      "layout": "flex items-center justify-center",
+      "description": "Website title, navigation menu and search bar",
+      "components": []
+    },
+    {
+      "type": "organism",
+      "name": "ProductDetails",
+      "layout": "grid grid-cols-1 md:grid-cols-2",
+      "description": "Product image, name, description, and features ",
+      "components": [
+        {
+          "type": "atom",
+          "name": "ProductImage",
+          "layout": "h-64 w-full",
+          "description": "Large product image",
+          "components": []
+        },
+        {
+          "type": "molecule",
+          "name": "ProductInformation",
+          "layout": "flex flex-col gap-4",
+          "description": "Product name, description and features",
+          "components": []
+        }
+      ]
+    },
+    {
+      "type": "atom",
+      "name": "SizeSelector",
+      "layout": "flex items-center gap-2",
+      "description": "Size selection options",
+      "components": []
+    },
+    {
+      "type": "atom",
+      "name": "SizeChart",
+      "layout": "h-32 w-full",
+      "description": "The size chart",
+      "components": []
+    },
+    {
+      "type": "molecule",
+      "name": "PricingDetails",
+      "layout": "flex items-start gap-1",
+      "description": "Product price and discount details",
+      "components": []
+    },
+    {
+      "type": "organism",
+      "name": "PurchaseActions",
+      "layout": "flex items-center justify-between",
+      "description": "Add to cart button and optional buy now button",
+      "components": [
+        {
+          "type": "atom",
+          "name": "AddToCartButton",
+          "layout": "h-10 w-32",
+          "description": "Add product to cart button",
+          "components": []
+        },
+        {
+          "type": "atom",
+          "name": "BuyNowButton",
+          "layout": "h-10 w-32",
+          "description": "Immediate purchase button",
+          "components": []
+        }
+      ]
+    },
+    {
+      "type": "atom",
+      "name": "DiscountDetails",
+      "layout": "flex items-start gap-2",
+      "description": "Display the original price and the discounted amount",
+      "components": []
+    },
+    {
+      "type": "molecule",
+      "name": "FitFinishDetails",
+      "layout": "flex flex-col gap-2",
+      "description": "Details about material, care instructions",
+      "components": []
+    },
+    {
+      "type": "organism",
+      "name": "ProductRecommendations",
+      "layout": "grid grid-cols-1 md:grid-cols-3",
+      "description": "Similar products and items frequently bought together",
+      "components": []
+    },
+    {
+      "type": "organism",
+      "name": "Footer",
+      "layout": "flex items-center justify-center",
+      "description": "Footer with additional links and information",
+      "components": []
+    }
+  ]
+}

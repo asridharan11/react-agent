@@ -18,12 +18,12 @@ const fullFlow = async (containerPath: string) => {
   await step2(containerPath); // Advised manual step: Verify uiComponents, make sure they fit the skeleton and user story
   await step3(containerPath); // Advised manual step: Verify components, delete components and re-generate them if needed
   await step4(containerPath); // Advised manual step: Verify components, delete components and re-generate them if needed
-  await step5(containerPath); // Advised manual step: Verify components, delete components and re-generate them if needed
-  await step6(containerPath);
+  // await step5(containerPath); // Advised manual step: Verify components, delete components and re-generate them if needed
+  // await step6(containerPath);
   // await step7(containerPath);
 };
 
-const CONTAINER_PATH = "EcommerceApp/ProductDetails";
+const CONTAINER_PATH = "EcommerceApp/PDP";
 export const generateComponents = async () => {
   console.log("generateComponents start");
   await fullFlow(CONTAINER_PATH);

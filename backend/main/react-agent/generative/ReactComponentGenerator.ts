@@ -22,9 +22,7 @@ Act as a Frontend Developer.
 Create Typescript React Functional Component based on the description.
 Make sure it is beautiful and easy to use.
 Make sure it covers all the use cases and states.
----
-Return Example:
-${componentExample}
+
 ---
 Instructions:
 Make sure it's a working code, don't assume that I'm going to change or implement anything.

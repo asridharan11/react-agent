@@ -37,12 +37,9 @@ I want you to use the design system to generate the real implementation from thi
 Steps:
 1. Choose the needed ui components from the design system (list will be provided below).
 2. Return an array with the ui components names from the list I gave you. return it in JSON format, as shown in the example below.
----
-Response Example:
-${pageResultExample}
+
 ---
 Design System Components Molecules List:
-${formatedComponents}
 ---
 Return Type:
 return a valid JSON format that I can use programmatically, copy paste your WHOLE RESPONSE in JSON.parse method.
@@ -55,8 +52,8 @@ export class ReactComponentPicker {
   private model: string;
 
   constructor() {
-    //this.model = "gpt-3.5-turbo";
-    this.model = "gpt-4"; //Umesh: we have to use gpt-4 here as it's responding proper UI components to be used for components generation.
+    this.model = "gpt-3.5-turbo";
+    //this.model = "gpt-4"; //Umesh: we have to use gpt-4 here as it's responding proper UI components to be used for components generation.
     this.chatbot = new ChatBot(this.model);
   }
 
